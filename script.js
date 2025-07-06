@@ -39,4 +39,14 @@ if (contactForm) {
             formMessage.style.display = 'none';
         }, 4000);
     });
-} 
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navContainer = document.querySelector('.nav-container');
+    if (hamburger && navContainer) {
+        hamburger.addEventListener('click', function() {
+            navContainer.classList.toggle('nav-open');
+        });
+    }
+}); 
